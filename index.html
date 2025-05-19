@@ -4,9 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assests/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Landing Page Barbearia</title>
   </head>
   <body>
+    <header>
+      <nav class="navigation">
+        <div class="logo-navigation">
+          <img src="./assests/img/IMG_1813 (1).PNG" alt="logo" />
+        </div>
+        <div class="section-navigation">
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#section-plans">Planos</a></li>
+            <li><a href="#section-catalog">Catálogo</a></li>
+            <li><a href="#section-contact">Contato</a></li>
+          </ul>
+          <a href="#" class="nav-btn">Agende seu Horário</a>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <i class="fa-solid fa-bars size-6"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#section-plans">Planos</a></li>
+          <li><a href="#section-catalog">Catálogo</a></li>
+          <li><a href="#section-contact">Contato</a></li>
+        </ul>
+        <a href="#" class="nav-btn-mobile">
+          Agende seu Horário <i class="fa-solid fa-comment"></i>
+        </a>
+      </div>
+    </header>
     <script src="./assests/js/script.js"></script>
   </body>
 </html>
