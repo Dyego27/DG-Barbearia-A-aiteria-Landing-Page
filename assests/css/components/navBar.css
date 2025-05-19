@@ -95,3 +95,6 @@ header .mobile-menu .nav-btn-mobile:hover {
   font-size: 19px;
   cursor: pointer;
 }
+
+@media (min-width: 992px) {
+}
