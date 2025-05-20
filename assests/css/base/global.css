@@ -2,10 +2,19 @@
 
 :root {
   --black-800: #171717;
+
+  --gray-600: #61616c;
+  --gray-800: #262626;
+  --gray-900-10-opacity: rgba(255, 255, 255, 0.1);
+
   --red-500: #fb2c36;
   --red-900: #800b0d;
-  --gray-800: #262626;
+
   --rose-700: #502729;
+
+  --purple-500: #9c4dcc;
+  --purple-700: #580f8b;
+
   --green-500: #15a366;
 
   --gradient-red: #e70027;

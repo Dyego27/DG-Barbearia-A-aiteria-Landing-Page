@@ -2,6 +2,7 @@ header {
   width: 100%;
   height: auto;
   align-items: center;
+  background-color: #171717;
 }
 
 header .navigation {
@@ -15,6 +16,7 @@ header .navigation {
 header .section-navigation {
   display: none;
 }
+
 header .logo-navigation {
   display: flex;
   align-items: center;
@@ -22,79 +24,175 @@ header .logo-navigation {
   font-size: 13px;
   cursor: pointer;
 }
+
 header .logo-navigation img {
   width: 40px;
   margin-right: 0.875rem;
 }
 
 header .navigation .mobile-menu-icon button {
+  position: relative;
   border: transparent;
   padding: 0.3rem;
   font-size: 25px;
-  color: #fff;
-  background-color: #171717;
+  color: var(--gray-600);
+  background-color: transparent;
   cursor: pointer;
   margin: 0 0.575rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .navigation .mobile-menu-icon .open-menu,
+header .navigation .mobile-menu-icon .close-menu {
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .navigation .mobile-menu-icon .open-menu {
+  opacity: 1;
 }
 
 header .navigation .mobile-menu-icon .close-menu {
-  display: none;
-}
-.open-menu.hide {
-  display: none;
-}
-
-.close-menu.show {
-  display: block !important;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
+header .navigation .mobile-menu-icon .open-menu.hide {
+  opacity: 0;
+}
+
+header .navigation .mobile-menu-icon .close-menu.show {
+  opacity: 1;
+}
 header .mobile-menu {
-  display: none;
-  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+  opacity: 0;
+  display: flex;
   flex-direction: column;
   background-color: var(--gray-800);
 }
+
 header .mobile-menu.active {
-  display: flex;
+  max-height: 500px;
+  opacity: 1;
 }
+
 header .mobile-menu ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
+
 header .mobile-menu ul > li {
   padding: 1.225rem;
-  border-bottom: 1px solid #fff;
-  width: 470px;
+  border-bottom: 1px solid var(--gray-900-10-opacity);
+  width: 100%;
+  text-align: center;
   opacity: 0.7;
+}
+
+header .mobile-menu ul > li:last-child {
+  border-bottom: none;
 }
 
 header .mobile-menu ul > li > a {
   text-decoration: none;
   color: #fff;
   transition: all 0.2s ease-in;
+  display: block;
 }
 
 header .mobile-menu ul > li > a:hover {
-  color: var(--red-500);
+  color: var(--purple-500);
 }
 
 header .mobile-menu .nav-btn-mobile {
-  width: 85%;
-  background-color: var(--red-500);
-  margin: 0.9rem 0 1.95rem 0;
+  background-color: var(--purple-700);
   text-decoration: none;
   color: #fff;
   text-align: center;
-  padding: 0.5rem 0.7rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  display: block;
 }
 
 header .mobile-menu .nav-btn-mobile:hover {
-  width: 89%;
-  box-shadow: var(--red-900) 0px 5px 5px -1px, var(--red-900) 0px 2px 7px -3px;
-  font-size: 19px;
+  opacity: 0.9;
   cursor: pointer;
 }
 
 @media (min-width: 992px) {
+  header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+  header .navigation .mobile-menu-icon {
+    display: none;
+  }
+
+  header .section-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  header .section-navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .section-navigation ul li {
+    margin: 0 1rem;
+  }
+
+  header .section-navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  header .section-navigation ul li a:hover {
+    color: var(--purple-500);
+  }
+
+  header .section-navigation .nav-btn {
+    background-color: var(--purple-700);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  header .section-navigation .nav-btn:hover {
+    opacity: 0.9;
+  }
+
+  header .mobile-menu {
+    display: none !important;
+  }
 }
