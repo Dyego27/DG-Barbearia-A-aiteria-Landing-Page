@@ -83,6 +83,12 @@ header .mobile-menu {
   display: flex;
   flex-direction: column;
   background-color: var(--gray-800);
+
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header .mobile-menu.active {
