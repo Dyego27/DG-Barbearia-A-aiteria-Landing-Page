@@ -131,7 +131,7 @@ header .mobile-menu ul > li > a:hover {
 }
 
 header .mobile-menu .nav-btn-mobile {
-  background-color: var(--purple-700);
+  background-color: var(--purple-600);
   text-decoration: none;
   color: var(--white);
   text-align: center;
@@ -181,7 +181,7 @@ header .mobile-menu .nav-btn-mobile:hover {
     text-decoration: none;
     color: var(--white);
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out;
   }
 
   header .section-navigation ul li a:hover {
@@ -189,7 +189,7 @@ header .mobile-menu .nav-btn-mobile:hover {
   }
 
   header .section-navigation .nav-btn {
-    background-color: var(--purple-700);
+    background-color: var(--purple-600);
     color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 8px;

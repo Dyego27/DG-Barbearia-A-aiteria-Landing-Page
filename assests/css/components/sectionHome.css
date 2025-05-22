@@ -44,7 +44,7 @@
   font-weight: 600;
   color: var(--white);
   width: 400px;
-  background-color: var(--indigo-700);
+  background-color: var(--purple-600);
   text-align: center;
   padding: 0.9rem 0.775rem;
   border-radius: 8px;
@@ -54,7 +54,7 @@
 }
 
 .section-home .Content .btn-home a:hover {
-  background-color: var(--purple-600);
+  background-color: var(--purple-500);
 }
 
 .seta {
@@ -72,4 +72,41 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .section-home {
+    height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(
+        to right,
+        var(--indigo-700),
+        var(--bg-opacity-90)
+      ),
+      url(/assests/img/IMG_2110.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .section-home .Content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 5%;
+  }
+
+  .section-home .Content h1 {
+    margin-top: 0;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-home .Content p {
+    font-size: 22px;
+    text-align: left;
+    max-width: 500px;
+  }
 }
