@@ -1,21 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
+  --white: #fff;
+
   --black-800: #171717;
+  --bg-opacity-30: rgba(0, 0, 0, 0.3);
+  --bg-opacity-90: rgba(0, 0, 0, 0.9);
 
   --gray-600: #61616c;
   --gray-800: #262626;
   --gray-900-10-opacity: rgba(255, 255, 255, 0.1);
 
   --red-500: #fb2c36;
-  --red-900: #800b0d;
 
-  --rose-700: #502729;
-
+  --purple-600: #6a0dad;
   --purple-500: #9c4dcc;
+  --indigo-700: #4b0082;
   --purple-700: #580f8b;
 
-  --green-500: #15a366;
+  --green-400: #25d366;
+  --green-500: #1ea951;
 
   --gradient-red: #e70027;
   --gradient-pink: #e60067;
@@ -29,5 +33,5 @@ html,
 body {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
-  background-color: #171717;
+  background-color: var(--black-800);
 }
