@@ -88,8 +88,8 @@ header .mobile-menu {
   flex-direction: column;
   background-color: var(--gray-800);
 
-  position: fixed;
-  top: 92px;
+  position: absolute;
+  top: 10;
   left: 0;
   width: 100%;
   z-index: 1000;
