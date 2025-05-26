@@ -3,6 +3,7 @@
 :root {
   --white: #fff;
 
+  --black-700: #232323;
   --black-800: #171717;
   --bg-opacity-30: rgba(0, 0, 0, 0.3);
   --bg-opacity-90: rgba(0, 0, 0, 0.9);

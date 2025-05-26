@@ -17,3 +17,29 @@ h2 {
 .section-plans h2 {
   font-size: 30px;
 }
+
+.section-plans .container-plans {
+  background-color: var(--black-700);
+  border: 2px solid var(--hsl-purple-800);
+  border-radius: 8px;
+  padding: 2rem 3rem;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.section-plans .container-plans .header-container h2 {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.section-plans .container-plans .header-container p {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.section-plans .container-plans .header-container span {
+  font-weight: 200;
+  font-size: 15px;
+  margin-left: 0.4rem;
+}
