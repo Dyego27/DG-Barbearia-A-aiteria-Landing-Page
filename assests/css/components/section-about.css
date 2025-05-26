@@ -25,7 +25,8 @@
 
 .about-content {
   text-align: left;
-  max-width: 422px;
+  width: 425px;
+  height: auto;
 }
 
 .about-content h2 {
@@ -50,5 +51,34 @@
 }
 
 .btn-about:hover {
-  transform: scale(1.1);
+  background-color: var(--purple-500);
+}
+
+@media (min-width: 992px) {
+  .section-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 4rem;
+  }
+  .section-about .about-content {
+    width: 600px;
+  }
+  .section-about .about-content h2 {
+    font-size: 40px;
+  }
+  .section-about .about-content p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+  .section-about .imgDiv img {
+    width: 550px;
+  }
+  .section-about .imgDiv {
+    margin-left: 7rem;
+  }
+  .about-content .btn-about {
+    padding: 0.5rem 11.8rem;
+  }
 }

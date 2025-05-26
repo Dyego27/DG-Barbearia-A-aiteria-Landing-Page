@@ -75,7 +75,7 @@
 
 @media (min-width: 992px) {
   .section-home {
-    height: 100vh;
+    height: 90vh;
     max-width: 100%;
     background-image: linear-gradient(
         to right,
