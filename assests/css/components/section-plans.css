@@ -76,3 +76,40 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.container-plans-soon {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .section-plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 10rem;
+  }
+  .section-plans .section-plans-header {
+    text-align: center;
+    width: 800px;
+  }
+  .section-plans .container-plans {
+    width: 500px;
+    margin-right: 2rem;
+  }
+  .plans-parents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-plans-soon {
+    display: block;
+    background-color: var(--black-700);
+    border: 2px solid var(--hsl-purple-800);
+    border-radius: 8px;
+    padding: 10.3rem 3rem;
+    width: 50%;
+    height: auto;
+    margin-top: 3rem;
+  }
+}
