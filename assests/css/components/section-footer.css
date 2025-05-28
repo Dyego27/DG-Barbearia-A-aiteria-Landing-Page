@@ -1,6 +1,56 @@
 .section-footer {
   text-align: left;
   max-width: 500px;
-  margin: 2rem;
   margin-top: 4rem;
+  border-top: 1px solid var(--gray-600);
+  border-bottom: 1px solid var(--gray-600);
+  margin-bottom: 2rem;
+}
+
+.section-footer .logo-section-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.section-footer .logo-section-footer img {
+  width: 40px;
+}
+
+.section-footer .logo-section-footer h2 {
+  margin-bottom: 0.6rem;
+}
+
+.section-footer .logo-section-footer a {
+  padding: 0.3rem 2rem;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--hsl-purple-800);
+  border-radius: 8px;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.section-footer .logo-section-footer a:hover {
+  background-color: var(--purple-500);
+  cursor: pointer;
+}
+
+.section-footer .quickLinks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.section-footer .quickLinks h2 {
+  margin-bottom: 1rem;
+}
+
+.section-footer .quickLinks a {
+  text-decoration: none;
+  margin-bottom: 1rem;
 }
