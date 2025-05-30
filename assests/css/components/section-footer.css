@@ -138,10 +138,17 @@ h2 {
   .section-footer {
     display: flex;
     align-items: center;
+    justify-content: ce;
+    flex-direction: row;
     width: 100%;
   }
 
   .faq-footer {
+    margin-left: 15rem;
+    margin-right: 15rem;
     width: 600px;
+  }
+  .logo-section-footer {
+    width: 800px;
   }
 }
