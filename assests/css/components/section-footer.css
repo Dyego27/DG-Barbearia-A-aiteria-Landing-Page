@@ -1,6 +1,6 @@
 .section-footer {
   text-align: left;
-  max-width: 500px;
+  width: 500px;
   margin-top: 4rem;
   border-top: 1px solid var(--gray-600);
   border-bottom: 1px solid var(--gray-600);
@@ -75,4 +75,73 @@
 
 .section-footer .contact .contactDiv .container-div-contact a:hover {
   color: var(--hsl-purple-800);
+}
+
+.faq-footer {
+  width: 90%;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.faq-footer h2 {
+  margin-bottom: 1rem;
+}
+
+.faq-container {
+  width: 95%;
+  box-shadow: none;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  padding: 0.5rem 0.7rem;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--gray-900-10-opacity);
+  color: var(--white);
+  text-align: center;
+  width: 428px;
+}
+
+.faq-question:hover {
+  opacity: 0.7;
+}
+
+.faq-answer p {
+  color: var(--white);
+  background-color: var(--gray-900-10-opacity);
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.faq-item {
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.active {
+  max-height: 400px;
+}
+
+@media (min-width: 992px) {
+  .section-footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq-footer {
+    width: 600px;
+  }
 }
