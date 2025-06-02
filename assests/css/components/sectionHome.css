@@ -4,7 +4,7 @@
       var(--bg-opacity-30),
       var(--bg-opacity-90)
     ),
-    url(/assests/img/IMG_2110.PNG);
+    url(/assests/img/BackImg.PNG);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@
         var(--indigo-700),
         var(--bg-opacity-90)
       ),
-      url(/assests/img/IMG_2110.PNG);
+      url(/assests/img/BackImg.PNG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
