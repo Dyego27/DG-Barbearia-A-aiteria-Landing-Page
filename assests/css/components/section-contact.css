@@ -120,9 +120,3 @@ h2 {
     padding: 0.5rem 6rem;
   }
 }
-
-@media (max-width: 720px) {
-  .section-contact {
-    margin-left: 8rem;
-  }
-}

@@ -113,12 +113,3 @@
     margin-top: 3rem;
   }
 }
-
-@media (max-width: 720px) {
-  .section-plans {
-    margin-left: 8rem;
-  }
-  .section-plans .plans-parents {
-    margin-right: 5rem;
-  }
-}
