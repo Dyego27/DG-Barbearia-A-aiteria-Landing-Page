@@ -217,3 +217,9 @@
     font-size: 9px;
   }
 }
+
+@media (max-width: 720px) {
+  .section-footer {
+    width: 720px;
+  }
+}

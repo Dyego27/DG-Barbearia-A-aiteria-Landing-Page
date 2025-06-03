@@ -105,3 +105,9 @@
     height: 250px;
   }
 }
+
+@media (min-width: 720px) {
+  .section-catalog {
+    margin-left: 8rem;
+  }
+}
