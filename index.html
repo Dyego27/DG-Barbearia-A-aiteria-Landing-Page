@@ -57,16 +57,22 @@
         <p>Estilo no Corte, Tradição no Serviço.</p>
         <div class="btn-home">
           <a href="#">Agendar Online<i class="fas fa-arrow-right seta"></i></a>
-          <a href="#">Ver catálogo<i class="fas fa-arrow-right seta"></i></a>
+          <a href="#section-catalog">Ver catálogo<i class="fas fa-arrow-right seta"></i></a>
         </div>
       </div>
     </section>
     <section class="section-about" id="section-about">
       <div class="imgDiv">
-        <img
-          src="/assests/img/barbearia.jpg"
-          alt=""
-        />
+        <img src="/assests/img/Moican.PNG" alt="cortes 1" class="slide-img active" />
+        <img src="/assests/img/JacaCurtinho_2.PNG" alt="Cortes 2" class="slide-img" />
+        <img src="/assests/img/AmericanoFreestyle_5.PNG" alt="cortes 3" class="slide-img" />
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        <div style="text-align:center" class="slide-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
       <div class="about-content">
         <h2>SOBRE <span class="gradient-text">NÓS</span></h2>
