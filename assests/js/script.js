@@ -12,12 +12,10 @@ const menuShow = () => {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Avança/retrocede os slides
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// Define o slide atual
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
@@ -51,3 +49,26 @@ function showSlides(n) {
     dots[slideIndex - 1].classList.add("active");
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  elementsToAnimate.forEach((element) => {
+    observer.observe(element);
+  });
+});
