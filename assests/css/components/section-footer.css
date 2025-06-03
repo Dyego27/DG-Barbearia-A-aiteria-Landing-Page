@@ -218,7 +218,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (min-width: 720px) {
   .section-footer {
     width: 720px;
   }

@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: 720px) {
+@media (max-width: 720px) {
   .section-catalog {
     margin-left: 8rem;
   }
