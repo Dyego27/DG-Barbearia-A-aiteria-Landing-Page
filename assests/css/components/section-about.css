@@ -173,3 +173,9 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: 450px) {
+  .btn-about {
+    padding: 0.8rem 2rem;
+  }
+}

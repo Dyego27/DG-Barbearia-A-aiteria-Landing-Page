@@ -95,3 +95,13 @@
     flex-direction: row;
   }
 }
+@media (max-width: 450px) {
+  .ContainerDiv .container {
+    margin-left: 0;
+    width: 300px;
+  }
+  .ContainerDiv .container img {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -109,3 +109,12 @@
     max-width: 500px;
   }
 }
+
+@media (max-width: 450px) {
+  .section-home .Content .btn-home a {
+    width: 350px;
+  }
+  .section-home .Content h1 {
+    font-size: 33px;
+  }
+}
