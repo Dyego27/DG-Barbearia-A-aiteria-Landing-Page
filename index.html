@@ -15,240 +15,305 @@
     <title>DG Barbearia e Açaiteria</title>
   </head>
   <body>
-    <header>
-      <nav class="navigation">
-        <div class="logo-navigation">
-          <img src="./assests/img/Logo.PNG" alt="logo" />
-          <h1>DG Barbearia <span class="gradient-text">Açaiteria</span></h1>
-        </div>
-        <div class="section-navigation">
+    <div id="loader-container">
+      <div class="loader"></div>
+    </div>
+    <div id="content" style="display: none;">
+        <header>
+        <nav class="navigation">
+          <div class="logo-navigation">
+            <img src="./assests/img/Logo.PNG" alt="logo" />
+            <h1>DG Barbearia <span class="gradient-text">Açaiteria</span></h1>
+          </div>
+          <div class="section-navigation">
+            <ul>
+              <li><a href="#section-about">Sobre</a></li>
+              <li><a href="#section-plans">Planos</a></li>
+              <li><a href="#section-catalog">Catálogo</a></li>
+              <li><a href="#section-contact">Contato</a></li>
+            </ul>
+            <a href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia." class="nav-btn" target="_blank">Agende seu Horário</a>
+          </div>
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+              <i class="fa-solid fa-bars size-6 open-menu"></i>
+              <i class="fa-solid fa-xmark size-6 close-menu"></i>
+            </button>
+          </div>
+        </nav>
+        <div class="mobile-menu">
           <ul>
             <li><a href="#section-about">Sobre</a></li>
             <li><a href="#section-plans">Planos</a></li>
             <li><a href="#section-catalog">Catálogo</a></li>
             <li><a href="#section-contact">Contato</a></li>
           </ul>
-          <a href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia." class="nav-btn" target="_blank">Agende seu Horário</a>
-        </div>
-        <div class="mobile-menu-icon">
-          <button onclick="menuShow()">
-            <i class="fa-solid fa-bars size-6 open-menu"></i>
-            <i class="fa-solid fa-xmark size-6 close-menu"></i>
-          </button>
-        </div>
-      </nav>
-      <div class="mobile-menu">
-        <ul>
-          <li><a href="#section-about">Sobre</a></li>
-          <li><a href="#section-plans">Planos</a></li>
-          <li><a href="#section-catalog">Catálogo</a></li>
-          <li><a href="#section-contact">Contato</a></li>
-        </ul>
-        <div class="nav-btn-mobile">
-          <a href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia." class="nav-btn-mobile">
-            Agende seu Horário <i class="fa-solid fa-comment"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <section class="section-home">
-      <div class="Content">
-        <h1>DG Barbearia <span class="gradient-text">Açaiteria</span></h1>
-        <p>Estilo no Corte, Tradição no Serviço.</p>
-        <div class="btn-home">
-          <a href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia." target="_blank">Agendar Online<i class="fas fa-arrow-right seta"></i></a>
-          <a href="#section-catalog">Ver catálogo<i class="fas fa-arrow-right seta"></i></a>
-        </div>
-      </div>
-    </section>
-    <section class="section-about animate-on-scroll" id="section-about">
-      <div class="imgDiv">
-        <img src="/assests/img/Moican.PNG" alt="cortes 1" class="slide-img active" />
-        <img src="/assests/img/JacaCurtinho_2.PNG" alt="Cortes 2" class="slide-img" />
-        <img src="/assests/img/AmericanoFreestyle_5.PNG" alt="cortes 3" class="slide-img" />
-        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)">&#10095;</button>
-        <div style="text-align:center" class="slide-dots">
-          <span class="dot active" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-      </div>
-      <div class="about-content">
-        <h2>SOBRE <span class="gradient-text">NÓS</span></h2>
-        <p>
-          A DG Barbearia e Açaiteria tem um legado de dedicação e paixão pelo
-          desempenho e qualidade.
-        </p>
-        <p>
-          Fundada por Daniel Gomes, a DG Barbearia e Açaiteria se tornou um
-          símbolo de lealdade, carinho e resultados reais na região. Após sua
-          heroica luta contra uma doença, Selma (Mãe) deixou seu legado para seu
-          filho, Daniel Gomes.
-        </p>
-        <p>
-          Assim Daniel manteve a fé e a força de vontade de sua mãe, pois o
-          sonho dela era que o filho tivesse seu próprio império, e assim foi
-          criada a DG Barbearia e Açaiteria que funciona desde 2022.
-        </p>
-        <p>
-          Hoje, a DG Barbearia e Açaiteria representa o equilíbrio perfeito
-          entre o respeito pela tradição da “barbearia rústica " e a inovação
-          tecnológica, oferecendo equipamentos de qualidade e desempenho.
-        </p>
-        <a href="#section-catalog" class="btn-about"
-          >Conheça Nosso Catalogo<i class="fas fa-arrow-right seta"></i
-        ></a>
-      </div>
-    </section>
-    <section class="section-plans animate-on-scroll" id="section-plans">
-      <div class="section-plans-header">
-        <h2>NOSSOS <span class="gradient-text">PLANOS</span></h2>
-        <p>
-          Transforme sua rotina com nossos planos exclusivos. Seja para manter o
-          corte em dia, experimentar novos estilos ou saborear nossas delícias
-          da açaiteria com vantagens, nossos pacotes oferecem o melhor
-          custo-benefício e a experiência completa.
-        </p>
-      </div>
-      <div class="plans-parents animate-on-scroll">
-        <div class="container-plans">
-          <div class="header-container">
-            <h2>Plano Mensal</h2>
-            <p class="price">R$ 70,00<span class="mouth">/mês</span></p>
-            <p class="descount">30% de desconto</p>
-          </div>
-          <div class="container-acess">
-            <p><i class="fas fa-check icon-checked"></i>4 cortes no mês</p>
-            <p>
-              <i class="fas fa-check icon-checked"></i>Qualquer corte do
-              catalogo
-            </p>
-            <p>
-              <i class="fas fa-check icon-checked"></i>Prioridade nos
-              agendamentos
-            </p>
-            <p>
-              <i class="fas fa-check icon-checked"></i>Barba e sobrancelha
-              incluso
-            </p>
-          </div>
-          <div class="btn-plans">
-            <a href="https://wa.me/5583993368237?text=Ola%20Daniel%20Gomes!%20tudo%20bem%3F%20estou%20interesse%20em%20assinar%20o%20plano%20de%20R%24%2070%20da%20Barbearia%2C%20Gostaria%20de%20saber%20como%20faco%20para%20assinar." target="_blank">acesse já</a>
+          <div class="nav-btn-mobile">
+            <a href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia." class="nav-btn-mobile">
+              Agende seu Horário <i class="fa-solid fa-comment"></i>
+            </a>
           </div>
         </div>
-        <div class="container-plans-soon">
-          <h1>Mais Planos em breve</h1>
+      </header>
+      <section class="section-home">
+        <div class="Content">
+          <h1>DG Barbearia <span class="gradient-text">Açaiteria</span></h1>
+          <p>Estilo no Corte, Tradição no Serviço.</p>
+          <div class="btn-home">
+            <a href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia." target="_blank">Agendar Online<i class="fas fa-arrow-right seta"></i></a>
+            <a href="#section-catalog">Ver catálogo<i class="fas fa-arrow-right seta"></i></a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section-catalog animate-on-scroll" id="section-catalog">
-      <div class="headerCatalog">
-        <h2>NOSSO <span class="gradient-text">CATALOGO</span></h2>
-        <p>Explore nossa galeria e encontre o corte perfeito para o seu estilo.</p>
-      </div>
-      <div class="ContainerDiv">
-         <div class="container">
-          <img src="assests/img/AmericanoFreestyle_3.PNG" alt="">
-          <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
-          <span>R$ 25,00</span>
+      </section>
+      <section class="section-about animate-on-scroll" id="section-about">
+        <div class="imgDiv">
+          <img src="/assests/img/Moican.PNG" alt="cortes 1" class="slide-img active" />
+          <img src="/assests/img/JacaCurtinho_2.PNG" alt="Cortes 2" class="slide-img" />
+          <img src="/assests/img/AmericanoFreestyle_5.PNG" alt="cortes 3" class="slide-img" />
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+          <div style="text-align:center" class="slide-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </div>
-         <div class="container">
-          <img src="assests/img/AmericanoFreestyle_4.PNG" alt="">
-          <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
-          <span>R$ 25,00</span>
+        <div class="about-content">
+          <h2>SOBRE <span class="gradient-text">NÓS</span></h2>
+          <p>
+            A DG Barbearia e Açaiteria tem um legado de dedicação e paixão pelo
+            desempenho e qualidade.
+          </p>
+          <p>
+            Fundada por Daniel Gomes, a DG Barbearia e Açaiteria se tornou um
+            símbolo de lealdade, carinho e resultados reais na região. Após sua
+            heroica luta contra uma doença, Selma (Mãe) deixou seu legado para seu
+            filho, Daniel Gomes.
+          </p>
+          <p>
+            Assim Daniel manteve a fé e a força de vontade de sua mãe, pois o
+            sonho dela era que o filho tivesse seu próprio império, e assim foi
+            criada a DG Barbearia e Açaiteria que funciona desde 2022.
+          </p>
+          <p>
+            Hoje, a DG Barbearia e Açaiteria representa o equilíbrio perfeito
+            entre o respeito pela tradição da “barbearia rústica " e a inovação
+            tecnológica, oferecendo equipamentos de qualidade e desempenho.
+          </p>
+          <a href="#section-catalog" class="btn-about"
+            >Conheça Nosso Catalogo<i class="fas fa-arrow-right seta"></i
+          ></a>
         </div>
-         <div class="container">
-          <img src="assests/img/AmericanoFreestyle_5.PNG" alt="">
-          <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
-          <span>R$ 25,00</span>
+      </section>
+      <section class="section-plans animate-on-scroll" id="section-plans">
+        <div class="section-plans-header">
+          <h2>NOSSOS <span class="gradient-text">PLANOS</span></h2>
+          <p>
+            Transforme sua rotina com nossos planos exclusivos. Seja para manter o
+            corte em dia, experimentar novos estilos ou saborear nossas delícias
+            da açaiteria com vantagens, nossos pacotes oferecem o melhor
+            custo-benefício e a experiência completa.
+          </p>
         </div>
-         <div class="container">
-          <img src="assests/img/AmericanoFreestyle_6.PNG" alt="">
-          <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
-          <span>R$ 25,00</span>
+        <div class="plans-parents animate-on-scroll">
+          <div class="container-plans">
+            <div class="header-container">
+              <h2>Plano Mensal</h2>
+              <p class="price">R$ 70,00<span class="mouth">/mês</span></p>
+              <p class="descount">30% de desconto</p>
+            </div>
+            <div class="container-acess">
+              <p><i class="fas fa-check icon-checked"></i>4 cortes no mês</p>
+              <p>
+                <i class="fas fa-check icon-checked"></i>Qualquer corte do
+                catalogo
+              </p>
+              <p>
+                <i class="fas fa-check icon-checked"></i>Prioridade nos
+                agendamentos
+              </p>
+              <p>
+                <i class="fas fa-check icon-checked"></i>Barba e sobrancelha
+                incluso
+              </p>
+            </div>
+            <div class="btn-plans">
+              <a href="https://wa.me/5583993368237?text=Ola%20Daniel%20Gomes!%20tudo%20bem%3F%20estou%20interesse%20em%20assinar%20o%20plano%20de%20R%24%2070%20da%20Barbearia%2C%20Gostaria%20de%20saber%20como%20faco%20para%20assinar." target="_blank">acesse já</a>
+            </div>
+          </div>
+          <div class="container-plans-soon">
+            <h1>Mais Planos em breve</h1>
+          </div>
         </div>
-      </div>
-      <div class="ContainerDiv">
-        <div class="container">
-          <img src="assests/img/Americano.PNG" alt="">
-          <p>Americano</p>
-          <span>R$ 25,00</span>
+      </section>
+      <section class="section-catalog animate-on-scroll" id="section-catalog">
+        <div class="headerCatalog">
+          <h2>NOSSO <span class="gradient-text">CATALOGO</span></h2>
+          <p>Explore nossa galeria e encontre o corte perfeito para o seu estilo.</p>
         </div>
-        <div class="container">
-          <img src="assests/img/Americano_2.PNG" alt="">
-          <p>Americano</p>
-          <span>R$ 25,00</span>
+        <div class="ContainerDiv">
+          <div class="container">
+            <img src="assests/img/AmericanoFreestyle_3.PNG" alt="">
+            <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/AmericanoFreestyle_4.PNG" alt="">
+            <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/AmericanoFreestyle_5.PNG" alt="">
+            <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/AmericanoFreestyle_6.PNG" alt="">
+            <p>Americano <span class="gradient-text">+</span> FreeStyle</p>
+            <span>R$ 25,00</span>
+          </div>
         </div>
-        <div class="container">
-          <img src="assests/img/Americano_3.PNG" alt="">
-          <p>Americano</p>
-          <span>R$ 25,00</span>
+        <div class="ContainerDiv">
+          <div class="container">
+            <img src="assests/img/Americano.PNG" alt="">
+            <p>Americano</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/Americano_2.PNG" alt="">
+            <p>Americano</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/Americano_3.PNG" alt="">
+            <p>Americano</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/Americano_4.PNG" alt="">
+            <p>Americano</p>
+            <span>R$ 25,00</span>
+          </div>
         </div>
-        <div class="container">
-          <img src="assests/img/Americano_4.PNG" alt="">
-          <p>Americano</p>
-          <span>R$ 25,00</span>
+        <div class="ContainerDiv">
+          <div class="container">
+            <img src="assests/img/JacaCurtinho.PNG" alt="">
+            <p>Jaca Curtinho</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/JacaCurtinho_2.PNG" alt="">
+            <p>Jaca Curtinho</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/JacaCurtinho_3.PNG" alt="">
+            <p>Jaca Curtinho</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="/assests/img/Moican.PNG" alt="">
+            <p>Moican</p>
+            <span>R$ 25,00</span>
+          </div>
         </div>
-      </div>
-      <div class="ContainerDiv">
-        <div class="container">
-          <img src="assests/img/JacaCurtinho.PNG" alt="">
-          <p>Jaca Curtinho</p>
-          <span>R$ 25,00</span>
+        <div class="ContainerDiv">
+          <div class="container">
+            <img src="assests/img/JitFade.PNG" alt="">
+            <p>Jit Fade</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/JitFade_2.PNG" alt="">
+            <p>Jit Fade</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="assests/img/JitFade_3.PNG" alt="">
+            <p>Jit Fade</p>
+            <span>R$ 25,00</span>
+          </div>
+          <div class="container">
+            <img src="/assests/img/Moican_2.PNG" alt="">
+            <p>Moican</p>
+            <span>R$ 25,00</span>
         </div>
-         <div class="container">
-          <img src="assests/img/JacaCurtinho_2.PNG" alt="">
-          <p>Jaca Curtinho</p>
-          <span>R$ 25,00</span>
+      </section>
+      <section class="section-contact animate-on-scroll" id="section-contact">
+        <h2 class="h2-contact">
+          FALE <span class="gradient-text">CONOSCO</span>
+        </h2>
+        <p>
+          Sua satisfação é nossa prioridade! Se precisar de algo ou tiver qualquer
+          pergunta, estamos à disposição por telefone, e-mail ou pessoalmente.
+        </p>
+        <div class="contact-container">
+          <div class="contactDiv">
+            <div class="container-div-contact">
+              <i class="fa-solid fa-circle-info"></i>
+              <h2>Informações !</h2>
+            </div>
+            <div class="container-div-contact">
+              <i class="fa-solid fa-phone"></i>
+              <p>(83)993368237</p>
+            </div>
+            <div class="container-div-contact">
+              <i class="fa-solid fa-clock"></i>
+              <p>Segunda a Sexta: 8h às 22h Sábado: 8h às 16h Domingo: Fechado</p>
+            </div>
+
+            <div class="container-div-contact">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                R. Ten. Cícero Cavalcante de Ataíde,Bairro Campo, Mamanguape-PB
+              </p>
+            </div>
+
+            <div class="container-div-contact">
+              <i class="fa-brands fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/danielbarbershop135/?igsh=OXBidDluYmp5amp6#"
+                target="_blank"
+                ><p>@danielbarbershop135</p></a
+              >
+            </div>
+          </div>
+          <div class="mapDiv">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.3549409224582!2d-35.12998753038903!3d-6.840173868013051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ad067853e974d3%3A0xddc2923926d51265!2sR.%20Ten.%20C%C3%ADcero%20Cavalcante%20de%20Ata%C3%ADde%2C%20139%2C%20Mamanguape%20-%20PB%2C%2058280-000!5e0!3m2!1spt-BR!2sbr!4v1748467007877!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-         <div class="container">
-          <img src="assests/img/JacaCurtinho_3.PNG" alt="">
-          <p>Jaca Curtinho</p>
-          <span>R$ 25,00</span>
+
+        <div class="footer-section-contact ">
+          <h2>MANDE UMA <span class="gradient-text">MENSAGEM!</span></h2>
+          <a href="https://wa.me/5583993368237?text=Ola%2C%20gostaria%20de%20tirar%20duvidas%20sobre%20a%20barbearia"  target="_blank">Fale Conosco</a>
         </div>
-        <div class="container">
-          <img src="/assests/img/Moican.PNG" alt="">
-          <p>Moican</p>
-          <span>R$ 25,00</span>
+      </section>
+      <footer class="section-footer animate-on-scroll">
+        <div class="logo-section-footer">
+          <img src="./assests/img/Logo.PNG" alt="logo" />
+          <h2>DG Barbearia <span class="gradient-text">Açaiteria</span></h2>
+          <p>Estilo no Corte, Tradição no Serviço.</p>
+          <a href="">Agende seu Horário<i class="fa-solid fa-comment"></i></a>
         </div>
-      </div>
-      <div class="ContainerDiv">
-        <div class="container">
-          <img src="assests/img/JitFade.PNG" alt="">
-          <p>Jit Fade</p>
-          <span>R$ 25,00</span>
+        <div class="links">
+          <h2>Links Rapidos</h2>
+          <ul>
+            <li><a href="#section-about">Sobre</a></li>
+            <li><a href="#section-plans">Planos</a></li>
+            <li><a href="#section-catalog">Catálogo</a></li>
+            <li><a href="#section-contact">Contato</a></li>
+          </ul>
         </div>
-        <div class="container">
-          <img src="assests/img/JitFade_2.PNG" alt="">
-          <p>Jit Fade</p>
-          <span>R$ 25,00</span>
-        </div>
-        <div class="container">
-          <img src="assests/img/JitFade_3.PNG" alt="">
-          <p>Jit Fade</p>
-          <span>R$ 25,00</span>
-        </div>
-        <div class="container">
-          <img src="/assests/img/Moican_2.PNG" alt="">
-          <p>Moican</p>
-          <span>R$ 25,00</span>
-      </div>
-    </section>
-    <section class="section-contact animate-on-scroll" id="section-contact">
-      <h2 class="h2-contact">
-        FALE <span class="gradient-text">CONOSCO</span>
-      </h2>
-      <p>
-        Sua satisfação é nossa prioridade! Se precisar de algo ou tiver qualquer
-        pergunta, estamos à disposição por telefone, e-mail ou pessoalmente.
-      </p>
-      <div class="contact-container">
         <div class="contactDiv">
-          <div class="container-div-contact">
-            <i class="fa-solid fa-circle-info"></i>
-            <h2>Informações !</h2>
-          </div>
           <div class="container-div-contact">
             <i class="fa-solid fa-phone"></i>
             <p>(83)993368237</p>
@@ -260,9 +325,7 @@
 
           <div class="container-div-contact">
             <i class="fa-solid fa-location-dot"></i>
-            <p>
-              R. Ten. Cícero Cavalcante de Ataíde,Bairro Campo, Mamanguape-PB
-            </p>
+            <p>R. Ten. Cícero Cavalcante de Ataíde,Bairro Campo, Mamanguape-PB</p>
           </div>
 
           <div class="container-div-contact">
@@ -272,78 +335,20 @@
               target="_blank"
               ><p>@danielbarbershop135</p></a
             >
-          </div>
-        </div>
-        <div class="mapDiv">
-          <iframe
-            class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.3549409224582!2d-35.12998753038903!3d-6.840173868013051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ad067853e974d3%3A0xddc2923926d51265!2sR.%20Ten.%20C%C3%ADcero%20Cavalcante%20de%20Ata%C3%ADde%2C%20139%2C%20Mamanguape%20-%20PB%2C%2058280-000!5e0!3m2!1spt-BR!2sbr!4v1748467007877!5m2!1spt-BR!2sbr"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+      </footer>
+      <div class="rights animate-on-scroll">
+        <p>© 2025 DG Barbearia e Açaiteria. Todos os direitos reservados.</p>
+        <span>Desenvolvido por Dyego Luis 💡Algoritmos de estilo, código de excelência.</span>
       </div>
-
-      <div class="footer-section-contact ">
-        <h2>MANDE UMA <span class="gradient-text">MENSAGEM!</span></h2>
-        <a href="https://wa.me/5583993368237?text=Ola%2C%20gostaria%20de%20tirar%20duvidas%20sobre%20a%20barbearia"  target="_blank">Fale Conosco</a>
-      </div>
-    </section>
-    <footer class="section-footer animate-on-scroll">
-      <div class="logo-section-footer">
-        <img src="./assests/img/Logo.PNG" alt="logo" />
-        <h2>DG Barbearia <span class="gradient-text">Açaiteria</span></h2>
-        <p>Estilo no Corte, Tradição no Serviço.</p>
-        <a href="">Agende seu Horário<i class="fa-solid fa-comment"></i></a>
-      </div>
-      <div class="links">
-        <h2>Links Rapidos</h2>
-        <ul>
-          <li><a href="#section-about">Sobre</a></li>
-          <li><a href="#section-plans">Planos</a></li>
-          <li><a href="#section-catalog">Catálogo</a></li>
-          <li><a href="#section-contact">Contato</a></li>
-        </ul>
-      </div>
-      <div class="contactDiv">
-        <div class="container-div-contact">
-          <i class="fa-solid fa-phone"></i>
-          <p>(83)993368237</p>
-        </div>
-        <div class="container-div-contact">
-          <i class="fa-solid fa-clock"></i>
-          <p>Segunda a Sexta: 8h às 22h Sábado: 8h às 16h Domingo: Fechado</p>
-        </div>
-
-        <div class="container-div-contact">
-          <i class="fa-solid fa-location-dot"></i>
-          <p>R. Ten. Cícero Cavalcante de Ataíde,Bairro Campo, Mamanguape-PB</p>
-        </div>
-
-        <div class="container-div-contact">
-          <i class="fa-brands fa-instagram"></i>
-          <a
-            href="https://www.instagram.com/danielbarbershop135/?igsh=OXBidDluYmp5amp6#"
-            target="_blank"
-            ><p>@danielbarbershop135</p></a
-          >
-    </footer>
-    <div class="rights animate-on-scroll">
-      <p>© 2025 DG Barbearia e Açaiteria. Todos os direitos reservados.</p>
-      <span>Desenvolvido por Dyego Luis 💡Algoritmos de estilo, código de excelência.</span>
+      <a
+        href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
-    <a
-      href="https://wa.me/5583993368237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia."
-      class="whatsapp-float"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fab fa-whatsapp"></i>
-    </a>
     <script src="./assests/js/script.js"></script>
   </body>
 </html>
