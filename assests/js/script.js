@@ -72,3 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(element);
   });
 });
+
+//loading screen
+
+window.addEventListener("load", function () {
+  const loaderContainer = document.getElementById("loader-container");
+  const content = document.getElementById("content");
+
+  loaderContainer.style.display = "none";
+
+  content.style.display = "block";
+});
