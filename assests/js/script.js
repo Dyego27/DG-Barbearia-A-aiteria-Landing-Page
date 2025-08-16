@@ -1,3 +1,4 @@
+//mobile hamburger menu
 const iconMenu = document.querySelector(".mobile-menu-icon button");
 const menuMobile = document.querySelector(".mobile-menu");
 const openMenuIcon = document.querySelector(".open-menu");
@@ -9,6 +10,16 @@ const menuShow = () => {
   closeMenuIcon.classList.toggle("show");
 };
 
+//Closes menu when the user clicks
+document.querySelectorAll(".mobile-menu a").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    menuMobile.classList.remove("active");
+    openMenuIcon.classList.remove("hide");
+    closeMenuIcon.classList.remove("show");
+  });
+});
+
+// Animation slideShow.
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -49,6 +60,8 @@ function showSlides(n) {
     dots[slideIndex - 1].classList.add("active");
   }
 }
+
+//Animation content
 
 document.addEventListener("DOMContentLoaded", () => {
   const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
